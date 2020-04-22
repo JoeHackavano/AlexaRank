@@ -1,0 +1,1 @@
+grep Rank * | tr '>' ' ' | tr '<' ' ' | awk '{print $1 "," $3}' | sed 's/\.xml\://' > days.csv
